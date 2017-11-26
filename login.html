@@ -38,21 +38,18 @@ and open the template in the editor.
         
              <div id="content">
                  
-                <form action="valideraanvändardata.php" method='POST'>
-                    <fieldset><legend>Login:</legend>
-                          <label>Användarnamn:</label>
-                          <input type="text" placeholder="Enter Username" name="tasty_username" required maxlength="20" /> <br />
-
-                          <label>Lösenord:</label>
-                          <input type="password" placeholder="Enter Password" name="tasty_password" required maxlength="40" />
-                          <!--<input type="hidden" name="form_token" value="<?php echo $form_token; />-->
-                          <input type="submit" value="Logga in" />
-                          <!--
-                          <input type="checkbox" checked="checked"> Remember me
-
-                          <button type="button" class="cancelbtn">Cancel</button>
-                          <span class="psw">Forgot <a href="#">password?</a></span> -->
+                <form action="login.php" method='POST'>
+                    
+                    <fieldset>
+                      <legend>Logga in här:</legend>
+                        
+                          <label>Användarnamn:</label><input type="text" placeholder="Enter Username" name="tasty_username" required maxlength="20" /> 
+                          <label>Lösenord:</label><input type="password" placeholder="Enter Password" name="tasty_password" required maxlength="40" />
+                          <input type="submit" value="Logga in" /> <br />
+                          <p>Inte registrerad?<a href="registreraanvändare.html"> Registrera ny användare här!</a></p>
+                    
                     </fieldset>
+                    
                 </form> 
              </div>
                 

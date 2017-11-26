@@ -1,6 +1,8 @@
 <?php
+
 /*start session för skapa tillstånd mellan klient och server*/
 session_start();
+
 /*kollar att lösen och användarnamn är satta via form*/
 if(!isset( $_POST['tasty_username'], $_POST['tasty_password'])) {
     $message = 'Skriv giltigt användarenamn och lösenord';
@@ -64,7 +66,7 @@ else {
         }
         else {
             /*Kastas om vi inte har lyckats kontakta databasservern.*/
-            $message = 'Just nu kan vi inte ta hand om din förfrågan. Försök igen vid ett senare tillfälle"';
+            $message = 'Just nu kan vi inte ta hand om din förfrågan. Försök igen vid ett senare tillfälle';
         }
     }
 }
